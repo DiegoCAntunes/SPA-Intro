@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+:root{
+    font-size: 62.5%;
+    --un-color: #E1E1E6;
+}
+
+header{
+    height: 12.2rem;
+    padding-top: 4rem;
+}
+
+nav{
+    display: flex;
+    margin-left: 7.2rem;
+    gap: 3.5rem;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2.2rem;
+    color: var(--un-color);
+}
+
+.active{
+    font-weight: bold;
+}
+
+img{
+    z-index: -1;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 125%;
+}
+
+.home{
+    align-content: center;
+    display: grid;
+    height: 100vh;
+    margin-top: -12rem;
+    place-items: center;
+    gap: 2.4rem;
+    align-items: center;
+}
+
+.home h1{
+    color: var(--un-color);
+}
+
+.home button{
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    outline: none;
+    padding: 1.2rem 3.2rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+    gap: .8rem;
+    width: fit-content;
+    transition: background 700ms;
+    transition: color 700ms;
+}
+
+.home button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #02799D;
+}
+
+.page{
+    height: 100%;
+}
+
+.universe, .explore{
+    text-align: left;
+    margin-left: 10.2rem;
+    margin-top: 6rem;
+}
+
+.universe p, .explore p{
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 160%;
+    width: clamp(65rem, 65rem + 10vw, 110rem);
+    margin-top: 1.6rem;
+    color: var(--un-color);
+}
